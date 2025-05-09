@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLibre - Compra y Vende con Confianza</title>
+    <meta name="description" content="La comunidad de compra y venta online más grande de América Latina">
+</head>
+<body>
+    <!-- Cabecera Principal -->
+    <header>
+        <!-- Barra Superior -->
+        <div>
+            <a href="/">
+                <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/logo__large_plus.png" 
+                     alt="MercadoLibre - Donde comprar y vender de todo" 
+                     width="134">
+            </a>
+            
+            <!-- Buscador -->
+            <form action="/items" method="GET" role="search">
+                <input type="text" 
+                       name="search" 
+                       placeholder="Buscar productos, marcas y más..." 
+                       aria-label="Campo de búsqueda">
+                <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+
+            <!-- Menú Usuario -->
+            <nav aria-label="Navegación de usuario">
+                <ul>
+                    <li><a href="/login" aria-label="Ingresar a tu cuenta">👤 Ingresá</a></li>
+                    <li><a href="/cart" aria-label="Ver carrito de compras">🛒 Carrito</a></li>
+                    <li><a href="/purchases" aria-label="Historial de compras">📦 Mis Compras</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Categorías Principales -->
+        <nav aria-label="Categorías principales">
+            <ul>
+                <li><a href="/ofertas">🎁 Ofertas</a></li>
+                <li><a href="/tecnologia">📱 Tecnología</a></li>
+                <li><a href="/hogar">🏠 Hogar</a></li>
+                <li><a href="/moda">👗 Moda</a></li>
+                <li><a href="/deportes">⚽ Deportes</a></li>
+                <li><a href="/supermercado">🛒 Supermercado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Banner Destacado -->
+        <section aria-labelledby="banner-heading">
+            <h2 id="banner-heading" hidden>Ofertas Especiales</h2>
+            <img src="https://http2.mlstatic.com/D_NQ_885945-MLA74690577570_022024-OO.webp" 
+                 alt="Hasta 70% OFF en electrónica y hogar" 
+                 width="1200">
+        </section>
+
+        <!-- Ofertas del Día -->
+        <section aria-labelledby="ofertas-dia">
+            <h2 id="ofertas-dia">🔥 Ofertas del Día</h2>
+            <div>
+                <article>
+                    <img src="https://via.placeholder.com/200x200?text=Smartphone+5G" 
+                         alt="Smartphone Ultra 5G 128GB"
+                         width="200">
+                    <h3>Smartphone Ultra 5G</h3>
+                    <p><del>$24,999</del> <strong>$18,499</strong></p>
+                    <small>50% OFF • 12x $1,541 sin interés</small>
+                    <p>🚚 Envío gratis</p>
+                </article>
+
+                <article>
+                    <img src="https://via.placeholder.com/200x200?text=Zapatos+Deportivos" 
+                         alt="Zapatos Running Pro"
+                         width="200">
+                    <h3>Zapatos Running Pro</h3>
+                    <p><del>$2,999</del> <strong>$1,299</strong></p>
+                    <small>56% OFF • Últimas unidades</small>
+                </article>
+
+                <!-- Repetir 4 artículos más -->
+            </div>
+        </section>
+
+        <!-- Categorías Populares -->
+        <section aria-labelledby="categorias-populares">
+            <h2 id="categorias-populares">📦 Categorías Populares</h2>
+            <div>
+                <article>
+                    <a href="/electronica">
+                        <img src="https://via.placeholder.com/150x150?text=Electrónica" 
+                             alt="Electrónica"
+                             width="150">
+                        <h3>Electrónica</h3>
+                        <p>Ver más →</p>
+                    </a>
+                </article>
+
+                <article>
+                    <a href="/herramientas">
+                        <img src="https://via.placeholder.com/150x150?text=Herramientas" 
+                             alt="Herramientas"
+                             width="150">
+                        <h3>Herramientas</h3>
+                        <p>Ver más →</p>
+                    </a>
+                </article>
+
+                <!-- Repetir 4 categorías más -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div>
+            <!-- Sección Ayuda -->
+            <section>
+                <h4>🛍️ Tu cuenta</h4>
+                <ul>
+                    <li><a href="/profile">Mi perfil</a></li>
+                    <li><a href="/purchases">Mis compras</a></li>
+                    <li><a href="/favorites">Favoritos</a></li>
+                </ul>
+            </section>
+
+            <!-- Sección Información -->
+            <section>
+                <h4>📚 Información</h4>
+                <ul>
+                    <li><a href="/help">Ayuda</a></li>
+                    <li><a href="/returns">Devoluciones</a></li>
+                    <li><a href="/security">Seguridad</a></li>
+                </ul>
+            </section>
+
+            <!-- Sección Legal -->
+            <section>
+                <h4>⚖️ Legal</h4>
+                <ul>
+                    <li><a href="/terms">Términos y condiciones</a></li>
+                    <li><a href="/privacy">Privacidad</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div>
+            <p>© 1999-2024 MercadoLibre Clone - HTML5</p>
+            <address>Dirección: Av. Libertador 1234, Buenos Aires, Argentina</address>
+        </div>
+    </footer>
+</body>
+</html>
